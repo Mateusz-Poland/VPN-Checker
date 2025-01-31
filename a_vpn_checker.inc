@@ -26,7 +26,7 @@ public CheckProcess(playerid, response_code, data[])
 	{
 		if(strfind(data, "\"proxy\": \"yes\"", true) != -1)
 		{
-            printf("%s[%d] использует VPN: %s.", GetName(playerid), playerid, ip);
+            printf("%s[%d] ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІ VPN: %s.", GetName(playerid), playerid, ip);
 			return 1;
 		}
 	}
@@ -35,7 +35,7 @@ public CheckProcess(playerid, response_code, data[])
 
 public OnPlayerRequestClass(playerid, classid)
 {
-    KnoxSecurePlayerConnect(playerid);
+    AbraKadabraChecker(playerid);
     return 1;
 }
 
